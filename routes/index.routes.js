@@ -4,6 +4,7 @@ const path = require("path")
 
 const Usuario = require("../models/Usuario");
 
+//Guardado de Formulario de inicio
 router.post("/ejemplo", async (req, res) => {
      
     try { const usuario = new Usuario(req.body);
@@ -12,9 +13,14 @@ router.post("/ejemplo", async (req, res) => {
     } catch (error) {
        return res.send(error);
     } 
-    
-
 });
+
+// Esto es de prueba ↓↓↓
+
+// router.post("/merengue", async (req, res) =>{
+//     const {nombre, email, contraseña } = req.body;
+//     res.send(email)
+// } )
 
 //Pagina principal
 router.get("/", (req, res) => {
