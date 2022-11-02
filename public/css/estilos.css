@@ -16,14 +16,89 @@ html{
   background-color: #cccccc;
 }
 
-div{
-    height:100vh ;
+.presentacion-div{
+    height:100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
-    
-   
+}
+
+.presentacion-footer{
+    height:60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: #d3d3d3;
+}
+
+/* div{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+} */
+
+
+
+.informacion-lista{
+   width: 300px;
+   height: 50px;
+   background-color: black;
+   margin: 5px;
+   color: white;
+   font-family:Khula;
+   border-radius: 5px;
+}
+
+footer{
+   background-color: lightblue;
+   height: 400px;
+   width: 100%;
+   padding: 10px;
+   box-sizing: content-box;
+   display: flex;
+}
+
+@media screen and (max-width: 480px) {
+
+  footer{
+     width: 100%;
+  }
+
+  .informacion-lista{
+   width: 200px;
+   height: 25px;
+   background-color: black;
+   margin: 5px;
+   color: white;
+   font-family:Khula;
+   border-radius: 5px;
+  }
+
+  .parrafo-footer{
+   font-family:Khula;
+   font-size: 10px;
+   margin-top: 10px;
+  }
+
+}
+
+.parrafo-footer{
+   font-family:Khula;
+   margin-top: 20px;
+}
+
+#playStore{
+   margin-top: 20px;
+   min-width: 20%;
+}
+
+#appStore{
+   margin: 20px;
+   min-width: 20%;
 }
 
 .informacion-lista{
@@ -239,10 +314,8 @@ div .img{
 }
 
 /*Section de informacion de los miembros del equipo*/
-
-#ia{
-  height: 100vh;
-  background-color: black;
+.ia{
+  background-color: #252326;
 }
 
 /*Estilos mobile first*/
@@ -309,10 +382,14 @@ div .img{
 }
 
 .barra-opciones{
-   background-color: lightgreen;
+   background: rgb(128,9,131);
+   background: linear-gradient(291deg, rgba(128,9,131,1) 41%, rgba(0,0,0,1) 100%);
    margin: 7px;
+   border-radius: 2rem;
+   max-height: 25%;
    padding: 5px;
    display: flex;
    flex-direction: row;
    justify-content: center;
+   backdrop-filter: blur(20px);
 }
