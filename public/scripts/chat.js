@@ -21,7 +21,7 @@ function getTime() {
 
 // Gets the first message
 function firstBotMessage() {
-    let firstMessage = "How's it going?" //Primer Mensaje
+    let firstMessage = "Bienvenido!" //Primer Mensaje
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();
@@ -46,7 +46,7 @@ function getResponse() {
     let userText = $("#textInput").val();
 
     if (userText == "") {
-        userText = "I love Code Palace!";
+        userText = "Hola!";
     }
 
     let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
@@ -70,9 +70,9 @@ function buttonSendText(sampleText) {
     document.getElementById("chat-bar-bottom");
 
     //Uncomment this if you want the bot to respond to this buttonSendText event
-    // setTimeout(() => {
-    //     getHardResponse(sampleText);
-    // }, 1000)
+     setTimeout(() => {
+         getHardResponse(sampleText);
+     }, 1000)
 }
 
 function sendButton() {

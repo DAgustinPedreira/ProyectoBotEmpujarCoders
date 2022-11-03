@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOT</title>
-    <link rel="stylesheet" href="public/css/estilos.css">
-    <link rel="stylesheet" href="public/css/chat.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/chat.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--bootstrap css-->
     <link rel="stylesheet" type="text/css"
@@ -18,7 +18,7 @@
     <!--Inicio de la pagina-->
     <!--Parte 1-->
     <div id="container" class="presentacion-div">
-        <img class="img" src="public/images/icono-chat-bot.png" alt="">
+        <img class="img" src="images/icono-chat-bot.png" alt="">
         <div class='console-container'>
             <span id='text'></span>
             <div class='console-underscore' id='console'>&#95;
@@ -54,12 +54,12 @@
             </div>
         </div>
         <div class="img-container">
-            <img class="img-bot" src="public/images/icono-chat-bot.png" alt="">
+            <img class="img-bot" src="images/icono-chat-bot.png" alt="">
         </div>
 
     </div>
 
-    <!--Parte de la informacion de los mienbros del equipo-->
+    <!--Parte de la informacion de los miembros del equipo-->
     <!--Parte 3-->
 
     <div id="ia" class="ia vh-100">
@@ -67,16 +67,16 @@
         <div class="container-chat gap-5">
             <div class="barra-opciones">
 
-                <button type="button" class="btn btn-secondary btn-lg m-3">Componentes</button>
-                <button type="button" class="btn btn-secondary btn-lg m-3">Monitores</button>
-                <button type="button" class="btn btn-secondary btn-lg m-3">Mouse</button>
-                <button type="button" class="btn btn-secondary btn-lg m-3">Gabinetes</button>
-                <button type="button" class="btn btn-secondary btn-lg m-3">Memorias</button>
+                <button id="boton-componentes" type="button" onclick="botonComponentes()" class="btn btn-secondary btn-lg m-3">Componentes</button>
+                <button id="boton-monitores" type="button" onclick="botonMonitores()" class="btn btn-secondary btn-lg m-3">Monitores</button>
+                <button id="boton-mouse" type="button" onclick="botonMouse()" class="btn btn-secondary btn-lg m-3">Mouse</button>
+                <button id="boton-gabinetes" type="button" onclick="botonGabinetes()" class="btn btn-secondary btn-lg m-3">Gabinetes</button>
+                <button id="boton-memorias" type="button" onclick="botonMemorias()" class="btn btn-secondary btn-lg m-3">Memorias</button>
     
             </div>
 
             <div class="chat-bar-collapsible">
-                <button id="chat-button" type="button" class="collapsible">Chat with us!
+                <button id="chat-button" type="button" class="collapsible">Habla con el bot!
                     <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
                 </button>
         
@@ -88,14 +88,14 @@
                                 <!-- Messages -->
                                 <div id="chatbox">
                                     <h5 id="chat-timestamp"></h5>
-                                    <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                                    <p id="botStarterMessage" class="botText"><span>Cargando...</span></p>
                                 </div>
         
                                 <!-- User input box -->
                                 <div class="chat-bar-input-block">
                                     <div id="userInput">
                                         <input id="textInput" class="input-box" type="text" name="msg"
-                                            placeholder="Tap 'Enter' to send a message">
+                                            placeholder="Presiona 'enter' para enviar el mensaje">
                                         <p></p>
                                     </div>
         
@@ -131,9 +131,9 @@
             <button class="informacion-lista">Informacion legal</button>
             <button class="informacion-lista">¿Que es un bot?</button>
 
-            <img id="playStore" src="public/images/Google_Play_Store_badge_EN.svg.png" width="12%">
+            <img id="playStore" src="images/Google_Play_Store_badge_EN.svg.png" width="12%">
 
-            <img id="appStore" src="public/images/itunes-app-store-logo.png" width="12%">
+            <img id="appStore" src="images/itunes-app-store-logo.png" width="12%">
 
             <p class="parrafo-footer">Buenos Aires, Argentina - Empujar/Coders (grupo2) </p>
 
@@ -142,15 +142,15 @@
     </footer>
 
     <!--Javascript de los estilos de la primera y segunda parte-->
-    <script src="public/js/PagPrincipal.js"></script>
+    <script src="js/PagPrincipal.js"></script>
 
     <!--Smooth scrolling jquery  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- ScriptChat -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="public/scripts/responses.js"></script>
-    <script src="public/scripts/chat.js"></script>
+    <script src="scripts/responses.js"></script>
+    <script src="scripts/chat.js"></script>
 
     <script>
         $(document).ready(function () {
