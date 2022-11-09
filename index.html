@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --peekobot-height: 80vh;
+            --peekobot-avatar: url("data:image/png;base64,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");
+        }
+    </style>
     <title>BOT</title>
-    <link rel="stylesheet" href="/public/css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/peekobot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
 </head>
+
 <body>
     <!--Inicio de la pagina-->
     <!--Parte 1-->
-    <div id="container">
-        <img class="img" src="/public/images/icono-chat-bot.png" alt="">
+    <div id="container" class="presentacion-div">
+        <img class="img" src="images/icono-chat-bot.png" alt="">
         <div class='console-container'>
             <span id='text'></span>
             <div class='console-underscore' id='console'>&#95;
@@ -21,78 +32,108 @@
             </div>
         </div>
         
-        <div class="navigation">
+        <div class="navigation presentacion-div">
             <a href="#information">¡Vamos!</a>
         </div>
     </div>
 
     <!--Parte de la informacion del bot-->
     <!--Parte 2-->
-    <div id="information" class="information">
+    <div id="information" class="information vh-100">
         <div class="text">
             <h2>¡Informacion sobre <span style="color:#ff5080;">mi!</span> </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus fugiat odit. Perspiciatis sed iusto sit doloremque aspernatur dicta magnam deleniti porro molestiae, laudantium nisi quasi nobis repudiandae reiciendis est consectetur inventore pariatur quibusdam fugit recusandae distinctio cupiditate accusamus. Ducimus illum quidem unde consequuntur mollitia, neque eligendi quam dolore deleniti quas inventore modi necessitatibus illo officiis beatae corrupti odit incidunt error. Repudiandae cupiditate autem perferendis ea, officia, possimus, debitis corporis id itaque. Natus, quibusdam ullam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus fugiat odit. Perspiciatis
+                sed iusto sit doloremque aspernatur dicta magnam deleniti porro molestiae, laudantium nisi quasi nobis
+                repudiandae reiciendis est consectetur inventore pariatur quibusdam fugit recusandae distinctio
+                cupiditate accusamus. Ducimus illum quidem unde consequuntur mollitia, neque eligendi quam dolore
+                deleniti quas inventore modi necessitatibus illo officiis beatae corrupti odit incidunt error.
+                Repudiandae cupiditate autem perferendis ea, officia, possimus, debitis corporis id itaque. Natus,
+                quibusdam ullam!</p>
             <h3>Cosas en las que te voy a ayudar</h3>
-            <p style="margin-bottom: 15px; ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur commodi perferendis in ullam quae ducimus rem, perspiciatis sed tempore quis odit sunt eum veniam? Pariatur, maiores quibusdam cum vitae incidunt alias placeat optio porro, dolorum magni commodi fuga dolorem ducimus cumque, architecto corporis aliquid. Vero ea tempora cupiditate magni debitis.</p>
-       
+            <p style="margin-bottom: 15px; ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+                commodi perferendis in ullam quae ducimus rem, perspiciatis sed tempore quis odit sunt eum veniam?
+                Pariatur, maiores quibusdam cum vitae incidunt alias placeat optio porro, dolorum magni commodi fuga
+                dolorem ducimus cumque, architecto corporis aliquid. Vero ea tempora cupiditate magni debitis.</p>
+
             <div class="navigation">
                 <a href="#ia">¡Sigamos!</a>
             </div>
         </div>
         <div class="img-container">
-            <img class="img-bot" src="/public/images/icono-chat-bot.png" alt="">
+            <img class="img-bot" src="images/icono-chat-bot.png" alt="">
+           
         </div>
 
     </div>
-
-    <!--Parte de la informacion de los mienbros del equipo-->
+    
+    <!--Parte de la informacion de los miembros del equipo-->
     <!--Parte 3-->
 
-    <div id="ia">
-
-       <div class="barra-opciones">
-
-       <button type="button" class="btn btn-secondary btn-lg m-3">Componentes</button>
-       <button type="button" class="btn btn-secondary btn-lg m-3">Monitores</button>
-       <button type="button" class="btn btn-secondary btn-lg m-3">Mouse</button>
-       <button type="button" class="btn btn-secondary btn-lg m-3">Gabinetes</button>
-       <button type="button" class="btn btn-secondary btn-lg m-3">Memorias</button>
-
-       </div>
-
+    <div id="peekobot-container">
+        <div id="peekobot-inner">
+            <div id="peekobot"></div>
+        </div>
+        <img id="imgg" src="" alt="">
+        <p id="hola"></p>
     </div>
-    
+
+    <footer>
+
+        <div class="lista-footer presentacion-footer" id="lista-footer-b">
+
+            <button class="informacion-lista">Sobre nosotros</button>
+            <button class="informacion-lista">Empresas</button>
+            <button class="informacion-lista">Bot para empresas</button>
+            <button class="informacion-lista">Informacion legal</button>
+            <button class="informacion-lista">¿Que es un bot?</button>
+
+            <img id="playStore" src="images/Google_Play_Store_badge_EN.svg.png" width="12%">
+
+            <img id="appStore" src="images/itunes-app-store-logo.png" width="12%">
+
+            <p class="parrafo-footer">Buenos Aires, Argentina - Empujar/Coders (grupo2) </p>
+
+        </div>
+
+    </footer>
+
     <!--Javascript de los estilos de la primera y segunda parte-->
-    <script src="/public/js/PagPrincipal.js"></script>
-    
+    <script src="js/PagPrincipal.js"></script>
+
     <!--Smooth scrolling jquery  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+    <!-- ScriptChat -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/conversation.js"></script>
+    <script src="scripts/peekobot.js"></script>
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
 
-      // Store hash
-      var hash = this.hash;
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
+                    // Store hash
+                    var hash = this.hash;
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
 </body>
+
 </html>
