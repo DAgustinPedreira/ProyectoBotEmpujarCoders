@@ -21,82 +21,15 @@
 </head>
 
 <body>
-    <!--Inicio de la pagina-->
-    <!--Parte 1-->
-    <div id="container" class="presentacion-div">
-        <img class="img" src="images/icono-chat-bot.png" alt="">
-        <div class='console-container'>
-            <span id='text'></span>
-            <div class='console-underscore' id='console'>&#95;
-                
-            </div>
-        </div>
-        
-        <div class="navigation presentacion-div">
-            <a href="#information">¡Vamos!</a>
-        </div>
-    </div>
-
-    <!--Parte de la informacion del bot-->
-    <!--Parte 2-->
-    <div id="information" class="information vh-100">
-        <div class="text">
-            <h2>¡Informacion sobre <span style="color:#ff5080;">mi!</span> </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus fugiat odit. Perspiciatis
-                sed iusto sit doloremque aspernatur dicta magnam deleniti porro molestiae, laudantium nisi quasi nobis
-                repudiandae reiciendis est consectetur inventore pariatur quibusdam fugit recusandae distinctio
-                cupiditate accusamus. Ducimus illum quidem unde consequuntur mollitia, neque eligendi quam dolore
-                deleniti quas inventore modi necessitatibus illo officiis beatae corrupti odit incidunt error.
-                Repudiandae cupiditate autem perferendis ea, officia, possimus, debitis corporis id itaque. Natus,
-                quibusdam ullam!</p>
-            <h3>Cosas en las que te voy a ayudar</h3>
-            <p style="margin-bottom: 15px; ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-                commodi perferendis in ullam quae ducimus rem, perspiciatis sed tempore quis odit sunt eum veniam?
-                Pariatur, maiores quibusdam cum vitae incidunt alias placeat optio porro, dolorum magni commodi fuga
-                dolorem ducimus cumque, architecto corporis aliquid. Vero ea tempora cupiditate magni debitis.</p>
-
-            <div class="navigation" style="height:25px ;">
-                <a href="#relleno3">¡Sigamos!</a>
-            </div>
-        </div>
-        <div class="img-container">
-            <img class="img-bot" src="images/icono-chat-bot.png" alt="">
-           
-        </div>
-
-    </div>
-    
     <!--Parte de la informacion de los miembros del equipo-->
     <!--Parte 3-->
-
-    <section class="relleno3" id="relleno3">
-      
-        <div class="container">
-            <div  class="inicio">
-              <img src="images/icono-chat-bot.png" alt="">
-              <h3 id="inicio" class="presupuesto" >
-                Para que empecemos a trabajar juntos nececito que inicies secion o si no tenes una
-                cuenta te registres a acontinuacion
-              </h3>
-             
-              <div class="btn-inicio">
-                <button  id="btnIndividual" type="button" class="btn btn-secondary btn-lg m-3" ><a style="text-decoration:none;color:white; " href="/login">Iniciar Secion</a></button>
-                <button id="btnRecomendado" type="button" class="btn btn-secondary btn-lg m-3"><a style="text-decoration:none;color:white; " href="/registro">Registrarse</a> </button>
-              </div>
-            </div>
-    
-            
-           
-           
-          
-    
-            
-           
-         
-    
-    
+    <div id="peekobot-container">
+        <div id="peekobot-inner">
+            <div id="peekobot"></div>
         </div>
-        </section>
+        <img id="imgg" src="" alt="">
+        <p id="hola"></p>
+    </div>
 
     <footer>
 
@@ -129,32 +62,6 @@
     <script src="scripts/conversation.js"></script>
     <script src="scripts/peekobot.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links
-            $("a").on('click', function (event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-    </script>
 </body>
 
 </html>
