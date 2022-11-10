@@ -242,7 +242,7 @@ const chat = {
           text: '<a href="https://www.linkedin.com/in/ezequiel-gonzalez03/" target="_blank" style="text-decoration:none"> LinkedIn: Nicolas Gonzalez </a> ',
         },
         {
-          text: '<a href="https://www.linkedin.com/in/nc2000/" target="_blank" style="text-decoration:none"> LinkedIn: Ezequiel Castro </a> ',
+          text: '<a href="https://www.linkedin.com/in/nc2000/" target="_blank" style="text-decoration:none"> LinkedIn: Nicolas Castro </a> ',
         },
         {
           text: '<a href="https://www.linkedin.com/in/pablorobledo1952/" target="_blank" style="text-decoration:none"> LinkedIn: Pablo Robledo </a> ',
