@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const dotenv = require("dotenv").config();
-
+const dotenv = require("dotenv");
+dotenv.config({ silent: process.env.NODE_ENV === 'production' });
 
 //coneccion a base de datos
 mongoose
