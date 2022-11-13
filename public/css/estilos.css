@@ -13,7 +13,7 @@ html{
 
 /*Estilos del bot*/
 #container{
-  background-color: #cccccc;
+  background-image: url(/images/wallpaper.jpg)
 }
 
 .presentacion-div{
@@ -25,12 +25,12 @@ html{
 }
 
 .presentacion-footer{
-    height:60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    background-color: #d3d3d3;
+    
+  display: flex;
+  margin: auto;
+ 
+
+ 
 }
 
 /* div{
@@ -89,6 +89,8 @@ footer{
 .parrafo-footer{
    font-family:Khula;
    margin-top: 20px;
+   color: aliceblue;
+
 }
 
 #playStore{
@@ -112,11 +114,10 @@ footer{
 }
 
 footer{
-   background-color: lightblue;
-   height: 600px;
-   width: 100%;
-   padding: 10px;
-   box-sizing: content-box;
+  background-color: #222;
+  width: 100%;
+  padding: 10px;
+  box-sizing: content-box;
 }
 
 @media screen and (max-width: 480px) {
@@ -243,7 +244,7 @@ div .img{
 
 /*Section de informacion del bot*/
 .information{
-    height:100vh ;
+   
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -434,4 +435,39 @@ div .img{
    flex-direction: row;
    justify-content: center;
    backdrop-filter: blur(20px);
+}
+
+.banner{
+  background-color: #222;
+  height: 40vh;
+
+}
+.banner2{
+  display: flex;
+  justify-content: center;
+
+}
+.imgbanner{
+  width: 800px;
+  height: 300px;
+}
+.infooter{
+    
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: auto;
+  margin-top: 50px;
+  margin-left: 10%;
+}
+.infooter2{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-left: 50px;
+margin-top: 50px;
+width: 400px;
+
+
 }
