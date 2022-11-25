@@ -8,8 +8,6 @@ const User=require('../models/usuarios')
 
 
 
-
-
 router.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, "../index.html"));
 })

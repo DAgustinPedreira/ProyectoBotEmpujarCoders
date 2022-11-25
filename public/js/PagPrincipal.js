@@ -68,3 +68,4 @@ let hipervinculo=document.querySelector('div a')
 hipervinculo.addEventListener('click',function(){
   hipervinculo.href='#information'
 })
+
