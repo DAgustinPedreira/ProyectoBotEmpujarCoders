@@ -523,7 +523,7 @@ const chat = {
     },
     {
       text: "Volver",
-      next: "segundaSeccionBajoOficinaIntel"
+      next: "segundaSeccionBajoOficina"
     },
     ]
   },
@@ -537,7 +537,7 @@ const chat = {
       },
       {
         text: "Volver a seleccionar procesador",
-        next: "segundaSeccionBajoOficinaIntel",
+        next: "segundaSeccionBajoOficina",
       },
     ]
   },
@@ -737,7 +737,7 @@ presupuestoMedioSecciones: {
   },
 
   segundaSeccionMedioOficina: {
-    text: "Te recomendamos elegir entre estos procesadores. Elegi uno para ver sus ventajas y desventajas <br> Ryzen 5 4600G. Precio aprox: $38000 <br> Intel I5 10400 (Normal, sin F). Precio aprox. $55000." ,
+    text: "Te recomendamos elegir entre estos procesadores. Elegi uno para ver sus ventajas y desventajas <br> Ryzen 5 4600G. Precio aprox: $38000 <br> Intel I5 10400 (Normal, sin F). Precio aprox. $39000." ,
     options: [
           {
             text: "Ryzen 5 4600G",
@@ -745,10 +745,105 @@ presupuestoMedioSecciones: {
           },
           {
             text: "I5 10400",
-            next: "procesadorI3_10100",
+            next: "procesadorI5_10400",
           },
     ]
   },
+
+  procesadorR5_4600GPMedio: {
+    text: '<a href="https://www.hardgamers.com.ar/search?text=Ryzen+5+4600G" target="_blank" style= "text-decoration: none; color:#000"><img src="https://www.venex.com.ar/products_images/thumb/1653412039_1638466775_sdfdgfeshsd.jpg" width="150"></a> <br><b> Ventajas </b> <br> Graficos integrados Vega 7 <br> Posibilidad de grafica dedicada a futuro <br> <b> Desventajas </b> <br> Se deben poner rams en dual channel para rendimiento optimo',
+    options: [
+    {
+      text: "Seleccionar",
+      next: "procesadorR5_4600GEtapaMother",
+    },
+    {
+      text: "Volver",
+      next: "segundaSeccionMedioOficina"
+    },
+    ]
+  },
+
+  procesadorI5_10400: {
+    text: '<a href="https://www.binarystore.com.ar/componentes-pc/micros/237343-intel-core-i5-10400-6-nucleos-y-43ghz-c-grafica-integrada.html  " target="_blank" style= "text-decoration: none; color:#000"><img src="https://mla-s1-p.mlstatic.com/686262-MLA42885718700_072020-F.jpg" width="150"></a> <br><b> Ventajas </b> <br> Buena frecuencia en turbo (Max 4.3ghz) <br> 6 Nucleos / 12 Hilos <br> <b> Desventajas </b><br> Grafica integrada de poca potencia <br> Solo soporta ram de hasta 2666mhz',
+    options: [
+    {
+      text: "Seleccionar",
+      next: "procesadorI5_10400EtapaMotherMedioOficina",
+    },
+    {
+      text: "Volver",
+      next: "segundaSeccionMedioOficina"
+    },
+    ]
+  },
+
+  
+
+  procesadorI5_10400EtapaMotherMedioOficina: {
+    text: 'Para este armado, te recomendamos la siguiente mother, principalmente porque cuenta con cuatro modulos para memoria ram, lo cual la hace mas actualizable: <br><b> MOTHER ASUS PRIME B460M-A LGA 1200. Precio aprox. $19000 </b> <br> <a href="https://www.hardgamers.com.ar/search?text=B460M-A"> <img src="https://mla-s1-p.mlstatic.com/652089-MLA47770661399_102021-F.jpg" width="150"></a>',
+    options: [
+      {
+        text: "Siguiente",
+        next: "procesadorI5_10400EtapaMemoriasMedioOficina",
+      },
+      {
+        text: "Volver a seleccionar procesador",
+        next: "segundaSeccionBajoGaming",
+      },
+    ]
+  },
+
+  procesadorI5_10400EtapaMemoriasMedioOficina: {
+    text: 'En el caso de este procesador, solo soporta memorias de hasta 2666mhz (no te preocupes si encontras de mas velocidad a menor precio, se ajustaran a la velocidad maxima permitida por el procesador) <br> Tambien te recomendamos que compres al menos dos modulos, para aprovechar el dual channel y además tener 16GB (2x8) <br> te recomendamos las siguientes memorias: MEMORIA 8GB DDR4 2666 HIKVISION. Precio aprox. $6500 </b><br> <a href="https://www.hardgamers.com.ar/search?text=Hikvision+DDR4+8GB" target="_blank" style= "text-decoration: none; color:#000"><img src="https://www.fullh4rd.com.ar/img/productos/Pics_Prod/memoria-8gb-ddr4-2666-hikvision-0.jpg" width="150"> </a> <br> DDR4 <br> Economica <br> Menor velocidad',
+    options: [
+      {
+        text: "Seleccionar",
+        next: "procesadorI5_10400EtapaFuenteMedioOficina",
+      },
+    ]
+  },
+
+  procesadorI5_10400EtapaFuenteMedioOficina: {
+    text: 'Te recomendamos la siguiente fuente. No importa el uso que se le vaya a dar una PC. Siempre se recomienda una fuente certificada 80+ ya que ofrecen mucha mejor proteccion<br> <b> FUENTE THERMALTAKE 600W 80+ SMART WHITE. Precio aprox. $13000 </b> <br> <a href="https://www.hardgamers.com.ar/search?text=Fuente+600w+Thermaltake" target="_blank" style= "text-decoration: none; color:#000"> <img src="https://app.contabilium.com/files/explorer/7026/Productos-Servicios/concepto-1229504.jpg" width="150"> <br>',
+    options: [
+      {
+        text: 'FUENTE THERMALTAKE 600W 80+ SMART WHITE',
+        next: "procesadorI5_10400EtapaGabineteMedioOficina"
+      },
+    ]
+  },
+
+  procesadorI5_10400EtapaGabineteMedioOficina: {
+    text: 'Perfecto! Llegamos al final del armado. Solo te quedaria elegir gabinete. En este caso te recomendamos algo con buen flujo de aire en caso de querer actualizar la PC. Igualmente, para tareas livianas, no tendras problemas con cualquier gabinete en general. Te damos algunas recomendaciones, pero es algo a gusto personal. <br> (La mother que elegimos es la mas chica del mercado, por lo tanto, cualquier gabinete te va a servir mientras tenga soporte M-ATX) <br> <b>Gabinete Thermaltake V200</b> Precio aprox. $15900 <br><a href="https://compragamer.com/producto/Gabinete_Thermaltake_V200_Tempered_Glass_Ryzen_Edition_Sin_fuente_10257" target="_blank" style= "text-decoration: none; color:#000"> <img src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_32090_Gabinete_Thermaltake_V200_Tempered_Glass_Ryzen_Edition_Sin_fuente_133340c2-grn.jpg" width="150"> </a> <br><b>Gabinete Sharkoon Slider </b> Precio aprox. $11500 <br><a href="https://www.hardgamers.com.ar/search?text=gabinete+sharkoon" target="_blank" style= "text-decoration: none; color:#000"> <img src="https://katech.com.ar/wp-content/uploads/GAB273.jpg" width="150"> </a>',
+    options: [{
+        text: "Siguiente",
+        next: "listadoFinalI5_10400MedioOficina",
+    }
+    ]
+  },
+
+  listadoFinalI5_10400MedioOficina: {
+    text: 'Este es el resumen de tu PC <br><b> Procesador </b>: I5 10400 <br> <b>Mother</b>: ASUS PRIME B460M-A LGA 1200 <br> <b>Memoria ram</b>: Hikvision DDR4 2666mhz <br> <b>Gabinete</b>: A eleccion (micro atx o superior)<br> <b>Tarjeta grafica</b>: Graficos integrados del procesador<br> <b> Fuente</b>: Thermaltake 600w 80+ Smart White <br> Como metodo de almacenamiento, te recomendamos un SSD de cualquier marca de al menos 240GB para el sistema operativo. <a href="https://www.hardgamers.com.ar/search?text=ssd+240" target="_blank"> Link </a> <br> Presupuesto aproximado (SSD Incluido): $100000-$110000',
+    options: [
+      {
+        text: '<a href="https://www.linkedin.com/in/david-agustin-pedreira" target="_blank" style="text-decoration:none"> LinkedIn: David Agustin Pedreira </a> ',
+      },
+      {
+        text: '<a href="https://www.linkedin.com/in/gonzalo-vignolles/" target="_blank" style="text-decoration:none"> LinkedIn: Gonzalo Vignolles </a> ',
+      },
+      {
+        text: '<a href="https://www.linkedin.com/in/ezequiel-gonzalez03/" target="_blank" style="text-decoration:none"> LinkedIn: Nicolas Gonzalez </a> ',
+      },
+      {
+        text: '<a href="https://www.linkedin.com/in/nc2000/" target="_blank" style="text-decoration:none"> LinkedIn: Ezequiel Castro </a> ',
+      },
+      {
+        text: '<a href="https://www.linkedin.com/in/pablorobledo1952/" target="_blank" style="text-decoration:none"> LinkedIn: Pablo Robledo </a> ',
+      },
+          ]
+  },
+
 
   primeraSeccionMedioGaming: {
     text: "Perfecto. Procederemos a elegir el procesador",
@@ -758,6 +853,149 @@ presupuestoMedioSecciones: {
         next: "segundaSeccionMedioGaming",
       },
     ],
+  },
+
+  segundaSeccionMedioGaming: {
+    text: 'Para este armado ya vamos a estar incluyendo una grafica dedicada (mucho mejor que los graficos integrados del procesador). Teniendo esto en cuenta, te recomendamos elegir el siguiente procesador. <br> I5 12400F. Precio aprox: $50000 <br> <a href="https://www.hardgamers.com.ar/search?text=Intel+I5+12400F" target="_blank" style= "text-decoration: none; color:#000"><img src="https://app.contabilium.com/files/explorer/7026/Productos-Servicios/concepto-7211279.jpg" width="150">' ,
+    options: [
+          {
+            text: "I5 12400F",
+            next: "procesadorI5_12400FMedioGaming",
+          },
+    ]
+  },
+
+  procesadorI5_12400FMedioGaming: {
+    text: '<a href="https://www.hardgamers.com.ar/search?text=Intel+I5+12400F" target="_blank" style= "text-decoration: none; color:#000"><img src="https://app.contabilium.com/files/explorer/7026/Productos-Servicios/concepto-7211279.jpg" width="150"></a> <br><b> Ventajas </b> <br> 6 Nucleos / 12 Hilos <br> Ultima generación de intel <br> Altamente actualizable <br> <b> Desventajas </b> <br> No posee graficos dedicados (Se necesita si o si de una tarjeta grafica para que funcione',
+    options: [
+    {
+      text: "Seleccionar",
+      next: "procesadorI5_12400FEtapaMotherMedioGaming",
+    },
+    {
+      text: "Volver",
+      next: "segundaSeccionBajoGaming"
+    },
+    ]
+  },
+
+  procesadorI5_12400FEtapaMotherMedioGaming: {
+    text: 'Para este armado, te recomendamos la siguiente mother <br> Tene en cuenta que al dia de la fecha(29/11/2022) no existen alternativas accesibles a mothers de 12va generación con 4 modulos de memoria ram. Esta en vos si queres invertir esa diferencia (aprox el doble) por esos modulos extras <br><b> MOTHER ASUS PRIME H610M-E LGA S1700. Precio aprox. $24500 </b> <br> <a href="https://www.hardgamers.com.ar/search?text=H610M-E"> <img src="https://app.contabilium.com/files/explorer/16752/Productos-Servicios/concepto-7394626.jpg" width="150"></a>',
+    options: [
+      {
+        text: "Siguiente",
+        next: "procesadorI5_12400FEtapaMemoriasMedioGaming",
+      },
+      {
+        text: "Volver a seleccionar procesador",
+        next: "segundaSeccionBajoGaming",
+      },
+    ]
+  },
+
+  procesadorI5_12400FEtapaMemoriasMedioGaming: {
+    text: 'Este procesador y mother soportan rams tanto DDR4 (viejas) como DDR5 (nuevas). En este armado vamos a recomendarte DDR5 ya que la diferencia de precio no es mucha. <br> Tambien te recomendamos que compres al menos dos modulos, para aprovechar el dual channel y además tener 16GB (2x8) <br> te recomendamos las siguientes memorias: MEMORIA 8GB DDR5 4800MHZ CRUCIAL. Precio aprox. $11000 </b><br> <a href="https://www.hardgamers.com.ar/search?text=Crucial+DDR5" target="_blank" style= "text-decoration: none; color:#000"><img src="https://http2.mlstatic.com/D_NQ_NP_604319-MLA50526185925_062022-O.webp" width="150"> </a> <br> DDR5 <br> Buena velocidad',
+    options: [
+      {
+        text: "Seleccionar",
+        next: "procesadorI5_12400FEtapaGraficaMedioGaming",
+      },
+    ]
+  },
+
+  procesadorI5_12400FEtapaGraficaMedioGaming: {
+    text: 'Como dijimos antes, para este procesador vamos a utilizar una grafica dedica. Te dejamos estas dos opciones con sus ventajas y desventajas, tanto de la marca NVIDIA como AMD <br> <b> NVIDIA RTX 3050 </b> <br> <a href="https://www.hardgamers.com.ar/search?text=3050" target="_blank" style= "text-decoration: none; color:#000"><img src="https://img1.wsimg.com/isteam/ip/23fa9c27-3ad2-4099-a13a-f6ae803e79aa/ols/1024.png" width="150"> </a> <br> Mejor CODEC para streaming o grabar <br> RTX <br> Mayor potencia para RTX en comparación a AMD <br> Mejores drivers <br> <b> AMD RX 6600 </b> <br> <a href="https://www.hardgamers.com.ar/search?text=RX+6600" target="_blank" style= "text-decoration: none; color:#000"><img src="https://img1.wsimg.com/isteam/ip/23fa9c27-3ad2-4099-a13a-f6ae803e79aa/ols/rx%206600%20figther.png" width="150"> <br> Mayor potencia bruta en comparación a la 3050 (+29% de fps) <br><br> <a href="https://www.youtube.com/watch?v=_n_1-NAwG0M&ab_channel=3DJuegosLATAM" target="_blank" style="text-decoration:none"> Que es RTX? </a> ',
+    options: [
+      {
+        text: "RTX 3050",
+        next: "procesadorI5_12400FEtapaFuenteGrafica1MedioGaming"
+      },
+      {
+        text: "RX 6600",
+        next: "procesadorI5_12400FEtapaFuenteGrafica2MedioGaming"
+      },
+    ]
+  },
+
+  procesadorI5_12400FEtapaFuenteGrafica1MedioGaming: {
+    text: 'Te recomendamos la siguiente fuente. No importa el uso que se le vaya a dar una PC. Siempre se recomienda una fuente certificada 80+ ya que ofrecen mucha mejor proteccion<br> <b> FUENTE THERMALTAKE 600W 80+ SMART WHITE. Precio aprox. $13000 </b> <br> <a href="https://www.hardgamers.com.ar/search?text=Fuente+600w+Thermaltake" target="_blank" style= "text-decoration: none; color:#000"> <img src="https://app.contabilium.com/files/explorer/7026/Productos-Servicios/concepto-1229504.jpg" width="150"> <br>',
+    options: [
+      {
+        text: 'FUENTE THERMALTAKE 600W 80+ SMART WHITE',
+        next: "procesadorI5_12400FEtapaGabineteGrafica1MedioGaming"
+      },
+    ]
+  },
+
+  procesadorI5_12400FEtapaFuenteGrafica2MedioGaming: {
+    text: 'Te recomendamos la siguiente fuente. No importa el uso que se le vaya a dar una PC. Siempre se recomienda una fuente certificada 80+ ya que ofrecen mucha mejor proteccion<br> <b> FUENTE THERMALTAKE 600W 80+ SMART WHITE. Precio aprox. $13000 </b> <br> <a href="https://www.hardgamers.com.ar/search?text=Fuente+600w+Thermaltake" target="_blank" style= "text-decoration: none; color:#000"> <img src="https://app.contabilium.com/files/explorer/7026/Productos-Servicios/concepto-1229504.jpg" width="150"> <br>',
+    options: [
+      {
+        text: 'FUENTE THERMALTAKE 600W 80+ SMART WHITE',
+        next: "procesadorI5_12400FEtapaGabineteGrafica2MedioGaming"
+      },
+    ]
+  },
+
+  procesadorI5_12400FEtapaGabineteGrafica1MedioGaming: {
+    text: 'Perfecto! Llegamos al final del armado. Solo te quedaria elegir gabinete. En este caso te recomendamos algo con buen flujo de aire en caso de querer actualizar la PC. <br> (La mother que elegimos es la mas chica del mercado, por lo tanto, cualquier gabinete te va a servir mientras tenga soporte M-ATX) <br> Solamente asegurate de que entre el ancho de tu tarjeta grafica. <br> <b>Gabinete Thermaltake V200</b> Precio aprox. $15900 <br><a href="https://compragamer.com/producto/Gabinete_Thermaltake_V200_Tempered_Glass_Ryzen_Edition_Sin_fuente_10257" target="_blank" style= "text-decoration: none; color:#000"> <img src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_32090_Gabinete_Thermaltake_V200_Tempered_Glass_Ryzen_Edition_Sin_fuente_133340c2-grn.jpg" width="150"> </a> <br><b>Gabinete Sharkoon Slider </b> Precio aprox. $11500 <br><a href="https://www.hardgamers.com.ar/search?text=gabinete+sharkoon" target="_blank" style= "text-decoration: none; color:#000"> <img src="https://katech.com.ar/wp-content/uploads/GAB273.jpg" width="150"> </a>',
+    options: [{
+        text: "Siguiente",
+        next: "listadoFinalI5_12400FMedioGamingGrafica1",
+    }
+    ]
+  },
+
+  procesadorI5_12400FEtapaGabineteGrafica2MedioGaming: {
+    text: 'Perfecto! Llegamos al final del armado. Solo te quedaria elegir gabinete. En este caso te recomendamos algo con buen flujo de aire en caso de querer actualizar la PC. <br> (La mother que elegimos es la mas chica del mercado, por lo tanto, cualquier gabinete te va a servir mientras tenga soporte M-ATX) <br> Solamente asegurate de que entre el ancho de tu tarjeta grafica. <br> <b>Gabinete Thermaltake V200</b> Precio aprox. $15900 <br><a href="https://compragamer.com/producto/Gabinete_Thermaltake_V200_Tempered_Glass_Ryzen_Edition_Sin_fuente_10257" target="_blank" style= "text-decoration: none; color:#000"> <img src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_32090_Gabinete_Thermaltake_V200_Tempered_Glass_Ryzen_Edition_Sin_fuente_133340c2-grn.jpg" width="150"> </a> <br><b>Gabinete Sharkoon Slider </b> Precio aprox. $11500 <br><a href="https://www.hardgamers.com.ar/search?text=gabinete+sharkoon" target="_blank" style= "text-decoration: none; color:#000"> <img src="https://katech.com.ar/wp-content/uploads/GAB273.jpg" width="150"> </a>',
+    options: [{
+        text: "Siguiente",
+        next: "listadoFinalI5_12400FMedioGamingGrafica2",
+    }
+    ]
+  },
+
+  listadoFinalI5_12400FMedioGamingGrafica1: {
+    text: 'Este es el resumen de tu PC <br><b> Procesador </b>: I5 12400F <br> <b>Mother</b>: ASUS PRIME H610M-E LGA S1700 <br> <b>Memoria ram</b>: Crucial 4800mhz DDR5 <br> <b>Gabinete</b>: A eleccion (micro atx o superior)<br> <b>Tarjeta grafica</b>: RTX 3050<br> <b> Fuente</b>: Thermaltake 600w 80+ Smart White <br> Como metodo de almacenamiento, te recomendamos un SSD de cualquier marca de al menos 240GB para el sistema operativo <br> <a href="https://www.hardgamers.com.ar/search?text=ssd+240" target="_blank"> Link </a> <br> Tambien te recomendamos sumar un HDD de 1TB para los juegos. <a href="https://www.hardgamers.com.ar/search?text=HDD+1TB" target="_blank"> Link </a> <br> Presupuesto aproximado (SSD+HDD Incluido): $175000-$185000',
+    options: [
+      {
+        text: '<a href="https://www.linkedin.com/in/david-agustin-pedreira" target="_blank" style="text-decoration:none"> LinkedIn: David Agustin Pedreira </a> ',
+      },
+      {
+        text: '<a href="https://www.linkedin.com/in/gonzalo-vignolles/" target="_blank" style="text-decoration:none"> LinkedIn: Gonzalo Vignolles </a> ',
+      },
+      {
+        text: '<a href="https://www.linkedin.com/in/ezequiel-gonzalez03/" target="_blank" style="text-decoration:none"> LinkedIn: Nicolas Gonzalez </a> ',
+      },
+      {
+        text: '<a href="https://www.linkedin.com/in/nc2000/" target="_blank" style="text-decoration:none"> LinkedIn: Ezequiel Castro </a> ',
+      },
+      {
+        text: '<a href="https://www.linkedin.com/in/pablorobledo1952/" target="_blank" style="text-decoration:none"> LinkedIn: Pablo Robledo </a> ',
+      },
+          ]
+  },
+
+
+  listadoFinalI5_12400FMedioGamingGrafica2: {
+    text: 'Este es el resumen de tu PC <br><b> Procesador </b>: I5 12400F <br> <b>Mother</b>: ASUS PRIME H610M-E LGA S1700 <br> <b>Memoria ram</b>: Crucial 4800mhz DDR5 <br> <b>Gabinete</b>: A eleccion (micro atx o superior)<br> <b>Tarjeta grafica</b>: RX 6600<br> <b> Fuente</b>: Thermaltake 600w 80+ Smart White <br> Como metodo de almacenamiento, te recomendamos un SSD de cualquier marca de al menos 240GB para el sistema operativo <br> <a href="https://www.hardgamers.com.ar/search?text=ssd+240" target="_blank"> Link </a> <br> Tambien te recomendamos sumar un HDD de 1TB para los juegos. <a href="https://www.hardgamers.com.ar/search?text=HDD+1TB" target="_blank"> Link </a> <br> Presupuesto aproximado (SSD+HDD Incluido): $175000-$185000',
+    options: [
+      {
+        text: '<a href="https://www.linkedin.com/in/david-agustin-pedreira" target="_blank" style="text-decoration:none"> LinkedIn: David Agustin Pedreira </a> ',
+      },
+      {
+        text: '<a href="https://www.linkedin.com/in/gonzalo-vignolles/" target="_blank" style="text-decoration:none"> LinkedIn: Gonzalo Vignolles </a> ',
+      },
+      {
+        text: '<a href="https://www.linkedin.com/in/ezequiel-gonzalez03/" target="_blank" style="text-decoration:none"> LinkedIn: Nicolas Gonzalez </a> ',
+      },
+      {
+        text: '<a href="https://www.linkedin.com/in/nc2000/" target="_blank" style="text-decoration:none"> LinkedIn: Ezequiel Castro </a> ',
+      },
+      {
+        text: '<a href="https://www.linkedin.com/in/pablorobledo1952/" target="_blank" style="text-decoration:none"> LinkedIn: Pablo Robledo </a> ',
+      },
+          ]
   },
 
   //opcion procesadores Estudio/Oficina
