@@ -58,7 +58,6 @@ input {
 body{
 	background-image:url(https://i.pinimg.com/originals/6c/d7/58/6cd75843d1343e57f42bf4d0eab8dc1e.jpg);
 	width: 100%;
-	
 	background-size: cover;
 	color:white;
 	
@@ -124,7 +123,8 @@ header a{
 @media only screen and (min-width:360px) and (max-width:757px){
 	form {
 		padding: 50px 20px;
-		background-color: #381b1ba6;
+		background-color: rgb(32, 153, 201);
+
 		margin-left: 5%;
 		margin-right: 5%;
 		margin-top: 70px;
@@ -139,7 +139,8 @@ header a{
 		font-size: 16px
 	}
 	body{
-		background-image:url(../IMG/fondolegal.jpg);
+		background-image:url(https://i.pinimg.com/originals/6c/d7/58/6cd75843d1343e57f42bf4d0eab8dc1e.jpg);
+
 		max-width: 100%;
 		max-height: 200%;
 		background-attachment: fixed; 
@@ -152,7 +153,7 @@ header a{
 @media only screen and (min-width:280px) and (max-width:757px){
 	form {
 		padding: 50px 20px;
-		background-color: #381b1ba6;
+		background-color: rgb(32, 153, 201);
 		margin-left: 5%;
 		margin-right: 5%;
 		margin-top: 70px;
@@ -167,7 +168,7 @@ header a{
 		font-size: 16px
 	}
 	body{
-		background-image:url(../IMG/fondolegal.jpg);
+		background-image:url(https://i.pinimg.com/originals/6c/d7/58/6cd75843d1343e57f42bf4d0eab8dc1e.jpg);
 		max-width: 100%;
 		max-height: 200%;
 		background-attachment: fixed; 
@@ -180,9 +181,10 @@ header a{
 @media only screen and (min-width:760px) and (max-width:1180px){
 	form {
 		padding: 50px 20px;
-		background-color: #381b1ba6;
-		margin-left: 5%;
-		margin-right: 5%;
+		background-color: rgb(32, 153, 201);
+		box-shadow: 0 0 16px 0 rgba(245, 16, 123, 0.8);
+		margin-left: 30%;
+		margin-right: 30%;
 		margin-top: 70px;
 		padding-top: 28px;
 		margin-bottom: 30px
@@ -195,9 +197,9 @@ header a{
 		font-size: 16px
 	}
 	body{
-		background-image:url(../IMG/fondolegal.jpg);
+		background-image:url(https://i.pinimg.com/originals/6c/d7/58/6cd75843d1343e57f42bf4d0eab8dc1e.jpg);
 		max-width: 100%;
-		
+
 		background-attachment: fixed; 
 		background-repeat: no-repeat;
 		color:white;
@@ -259,3 +261,4 @@ header a{
 	width: 200px;
 	height: 200px;
   }
+
