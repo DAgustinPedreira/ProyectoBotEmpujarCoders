@@ -175,3 +175,13 @@
         border-radius: 0px;
     }
 }
+@media only screen and (min-width:360px) and (max-width:1200px)
+{
+  .parrafo-footer{
+    opacity: 0;
+   }}
+   @media only screen and (min-width:360px) and (max-width:700px)
+   {
+  .infooter2{
+opacity: 0;
+  }}

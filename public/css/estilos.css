@@ -99,7 +99,7 @@ body{
     flex-direction: column;
     align-items: center;
     margin: auto;
-    background-color: #171717;
+    background-image: url(https://i.pinimg.com/originals/cf/ec/88/cfec8819d8376a57c86e3c6e53ed618e.gif);
   color: #000;
   line-height: 1.6;
   position: relative;
@@ -233,7 +233,9 @@ footer{
 }
 
 @media screen and (max-width: 480px) {
-
+  .parrafo-footer{
+    opacity: 0;
+   }
   footer{
      width: 100%;
   }
@@ -297,7 +299,9 @@ footer{
 }
 
 @media screen and (max-width: 480px) {
-
+  .parrafo-footer{
+    opacity: 0;
+   }
   footer{
      width: 100%;
   }
@@ -392,7 +396,8 @@ div .img{
   cursor: pointer;
   width: 100px;
   text-decoration: none;
-  background-color:#65d8ff;
+  background-color:#1100ff;
+  border-color: #00a1d6;
   border-radius: 30px;
   height: 40px;
   transition: all 400ms ease;
@@ -404,8 +409,9 @@ div .img{
 }
 
 .navigation a{
+  border-radius: 30px;
   padding: 10px;
-  color: rgb(78, 74, 74);
+  color: rgb(14, 206, 212);
   text-decoration: none;
   cursor: pointer;
   font-weight: bold;
@@ -414,7 +420,7 @@ div .img{
 }
 
 .navigation a:hover{
-  color: black;
+  color: rgb(11, 206, 255);
 }
 
 
@@ -570,7 +576,9 @@ div .img{
       }
      }
 
-     
+     .parrafo-footer{
+      opacity: 0;
+     }
      
      
      
@@ -765,3 +773,17 @@ width: 400px;
   box-shadow: 5px 5px 15px purple;
 }
 
+@media only screen and (min-width:360px) and (max-width:1200px)
+{
+  .parrafo-footer{
+    opacity: 0;
+   }
+   .information .img-bot{
+   opacity: 0;
+    width: 0px;
+  }}
+   @media only screen and (min-width:360px) and (max-width:700px)
+   {
+  .infooter2{
+opacity: 0;
+  }}
