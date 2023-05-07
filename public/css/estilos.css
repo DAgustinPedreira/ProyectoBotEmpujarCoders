@@ -626,7 +626,7 @@ div .img{
 }
 
 .banner{
-  overflow: auto;
+  overflow:hidden;
   
 
 }
