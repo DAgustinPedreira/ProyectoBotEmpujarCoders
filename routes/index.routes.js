@@ -12,22 +12,22 @@ router.get("/", (req, res) => {
 })
 
 router.get('/registro',(req,res)=>{
-    res.render('register.ejs')
+    res.render('../views/register.ejs')
   })
 
   router.post('/registro',passport.authenticate('local-/register',{
-    successRedirect:'/login',
-    failureRedirect:'/registro',
+    successRedirect:'../views/login',
+    failureRedirect:'../views/registro',
     passReqToCallback:true
 }))
 
   router.get('/login',(req,res)=>{
-    res.render('login.ejs')
+    res.render('../views/login.ejs')
   })
 
   router.post('/login',passport.authenticate('local-/login',{
-    successRedirect:'/bot',
-    failureRedirect:'/login',
+    successRedirect:'../views/bot',
+    failureRedirect:'../views/login',
     passReqToCallback:true
 }))
 

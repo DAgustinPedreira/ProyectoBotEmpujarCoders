@@ -48,7 +48,7 @@ app.use(routes)
 
 //Static
 app.use(express.static(__dirname + '/public'));
-app.use(express.static('views'))
+// app.use(express.static('views'))
 
 
 
