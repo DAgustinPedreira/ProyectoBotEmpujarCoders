@@ -12,27 +12,27 @@ router.get("/", (req, res) => {
 })
 
 router.get('/registro',(req,res)=>{
-    res.render('./views/register.ejs')
+    res.render('/views/register.ejs')
   })
 
   router.post('/registro',passport.authenticate('local-/register',{
-    successRedirect:'./views/login',
-    failureRedirect:'./views/registro',
+    successRedirect:'/views/login',
+    failureRedirect:'/views/registro',
     passReqToCallback:true
 }))
 
   router.get('/login',(req,res)=>{
-    res.render('./views/login.ejs')
+    res.render('/views/login.ejs')
   })
 
   router.post('/login',passport.authenticate('local-/login',{
-    successRedirect:'./views/bot',
-    failureRedirect:'./views/login',
+    successRedirect:'/views/bot',
+    failureRedirect:'/views/login',
     passReqToCallback:true
 }))
 
 router.get('/bot',isAuthenticated,(req,res)=>{
-  res.render('bot.ejs')
+  res.render('/views/bot.ejs')
 })
 
 
@@ -42,7 +42,7 @@ function isAuthenticated(req,res,next) {
   if (req.isAuthenticated()) {
       return next()
   }
-  res.redirect('login')
+  res.redirect('/views/login')
 }
 
 
