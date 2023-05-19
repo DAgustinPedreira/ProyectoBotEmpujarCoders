@@ -12,7 +12,7 @@ router.get("/", (req, res) => {
 })
 
 router.get('/registro',(req,res)=>{
-    res.render('register.ejs')
+    res.render('../views/register.ejs')
   })
 
   router.post('/registro',passport.authenticate('local-/register',{
