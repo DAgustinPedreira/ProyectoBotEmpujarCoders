@@ -101,7 +101,7 @@ const bot = function () {
         printResponse(chat[1]);
     }
 
-    const init = function (container) {
+    const init = function () {
         container.addEventListener('click', handleChoice);
 
         restartButton = document.createElement('button');

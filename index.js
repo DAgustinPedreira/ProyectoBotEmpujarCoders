@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000;
 const passport=require('passport')
 const session = require('express-session')
 const flash=require('connect-flash')
-
+require("./config/passport");
 
 
 //cambiado de 3000 a 27017
@@ -27,9 +27,9 @@ app.use(session({
   resave:false,
   saveUninitialized:false
 }))
-app.use(flash())
-app.use(passport.initialize())
-app.use(passport.session())
+app.use(flash());
+app.use(passport.initialize());
+app.use(passport.session());
 
 
 app.use((req,res,next)=>{
