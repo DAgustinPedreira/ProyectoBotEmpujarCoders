@@ -8,6 +8,7 @@ const flash=require('connect-flash')
 require("./config/passport");
 
 
+
 //cambiado de 3000 a 27017
 
 
@@ -49,6 +50,8 @@ app.use(routes)
 //Static
 app.use(express.static(__dirname + '/public'));
 // app.use(express.static('views'))
+app.set('view engine', 'ejs');
+app.set("views", __dirname + "/views");
 
 
 
